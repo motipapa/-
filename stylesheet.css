@@ -1,271 +1,111 @@
-* {
-  ボックスサイズ: ボーダーボックス;
+.wpcf7 .screen-reader-response {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
-体 {
-  マージン: 0;
-  font-family: "ヒラギノ角ゴシック ProN";
+.wpcf7 form .wpcf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+	border: 2px solid #00a0d2; /* Blue */
 }
 
-{
-  テキスト装飾: なし;
+.wpcf7 form.init .wpcf7-response-output {
+	display: none;
 }
 
-。容器 {
-  幅: 100%;
-  パディング: 0 15px;
-  マージン: 0 自動;
+.wpcf7 form.sent .wpcf7-response-output {
+	border-color: #46b450; /* Green */
 }
 
-.トップラッパー {
-  パディング: 180px 0 100px 0;
-  背景画像: url(top.png);
-  背景サイズ: カバー;
-  色: 白;
-  テキスト整列: 中央;
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+	border-color: #dc3232; /* Red */
 }
 
-.トップラッパー h1 {
-  不透明度: 0.7;
-  フォントサイズ: 45px;
-  文字間隔: 5px;
+.wpcf7 form.spam .wpcf7-response-output {
+	border-color: #f56e28; /* Orange */
 }
 
-.トップラッパー p {
-  不透明度: 0.7;
-  フォントサイズ: 16px;
-  margin-bottom: 40px;
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+	border-color: #ffb900; /* Yellow */
 }
 
-.btn-ラッパー {
-  テキスト整列: 中央;
+.wpcf7-form-control-wrap {
+	position: relative;
 }
 
-.btn-wrapper p {
-  margin-bottom: 20px;
+.wpcf7-not-valid-tip {
+	color: #dc3232;
+	font-size: 1em;
+	font-weight: normal;
+	display: block;
 }
 
-。サインアップ {
-  背景色: #239b76;
+.use-floating-validation-tip .wpcf7-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	border: 1px solid #dc3232;
+	background: #fff;
+	padding: .2em .8em;
 }
 
-。フェイスブック {
-  背景色: #3b5998;
-  右マージン: 10px;
+span.wpcf7-list-item {
+	display: inline-block;
+	margin: 0 0 0 1em;
 }
 
-。ツイッター {
-  背景色: #55acee;
+span.wpcf7-list-item-label::before,
+span.wpcf7-list-item-label::after {
+	content: " ";
 }
 
-.btn {
-  パディング: 8px 24px;
-  色: 白;
-  表示: インラインブロック;
-  不透明度: 0.8;
-  ボーダー半径: 4px;
-  テキスト整列: 中央;
+div.wpcf7 .ajax-loader {
+	visibility: hidden;
+	display: inline-block;
+	background-image: url('../../assets/ajax-loader.gif');
+	width: 16px;
+	height: 16px;
+	border: none;
+	padding: 0;
+	margin: 0 0 0 4px;
+	vertical-align: middle;
 }
 
-.btn:ホバー {
-  不透明度: 1;
+div.wpcf7 .ajax-loader.is-active {
+	visibility: visible;
 }
 
-.fa {
-  右マージン: 5px;
+div.wpcf7 div.ajax-error {
+	display: none;
 }
 
-ヘッダー {
-  高さ: 65px;
-  幅: 100%;
-  背景色: rgba(34,49,52,0.9);
-  位置:固定;
-  上: 0;
-  Z インデックス: 10;
+div.wpcf7 .placeheld {
+	color: #888;
 }
 
-.ロゴ {
-  幅: 124px;
-  マージントップ: 20px;
+div.wpcf7 input[type="file"] {
+	cursor: pointer;
 }
 
-.header-left {
-  フロート: 左;
+div.wpcf7 input[type="file"]:disabled {
+	cursor: default;
 }
 
-.header-right {
-  フロート: 右;
-  マージン右: -25px;
+div.wpcf7 .wpcf7-submit:disabled {
+	cursor: not-allowed;
 }
 
-.header-right a {
-  行の高さ: 65px;
-  パディング: 0 25px;
-  色: 白;
-  表示ブロック;
-  フロート: 左;
-  トランジション: すべて 0.5 秒;
-}
-
-.header-right a:hover {
-  背景色: rgba(255,255,255,0.3);
-}
-
-.レッスンラッパー{
-  高さ: 580px;
-  パディングボトム: 80px;
-  パディング左: 5%;
-  右パディング: 5%;
-  背景色: #f7f7f7;
-  テキスト整列: 中央;
-}
-
-.見出し {
-  パディングトップ: 80px;
-  パディングボトム: 50px;
-  色: #5f5d60;
-}
-
-.heading h2 {
-  フォントの太さ: 通常;
-}
-
-。レッスン {
-  フロート: 左;
-  幅: 25%;
-}
-
-.レッスンアイコン {
-  位置: 相対;
-}
-
-.lesson-icon p {
-  位置: 絶対;
-  上: 37%;
-  幅: 100%;
-  色: 白;
-}
-
-.text-contents {
-  幅: 80%;
-  表示: インラインブロック;
-  マージントップ: 15px;
-  フォントサイズ: 13px;
-  色: #b3aeb5;
-}
-
-.見出し h3 {
-  フォントの太さ: 通常;
-}
-
-.メッセージラッパー {
-  border-bottom: 1px ソリッド #eee;
-  パディングボトム: 80px;
-  テキスト整列: 中央;
-}
-
-。メッセージ {
-  パディング: 15px 40px;
-  背景色: #5dca88;
-  カーソル: ポインタ;
-  ボックスの影: 0px 7px #1a7940;
-}
-
-.message:アクティブ {
-  位置: 相対;
-  上: 7px;
-  ボックスの影: なし;
-}
-
-フッター画像 {
-  幅: 125px;
-}
-
-フッター p {
-  色: #b3aeb5;
-  フォントサイズ: 12px;
-}
-
-フッター {
-  パディングトップ: 30px;
-  パディングボトム: 20px;
-}
-
-.メニューアイコン {
-  色: 白;
-  フロート: 右;
-  フォントサイズ: 25px;
-  パディング: 21px 0;
-  表示: なし;
-}
-
-。クリア {
-  クリア: 左;
-}
-
-@media all and (max-width: 1000px) {
-  。レッスン {
-    幅: 50%;
-    margin-bottom: 50px;
-  }
-
-  .レッスンラッパー{
-    高さ: 990px​​;
-  }
-
-  フッター {
-    テキスト整列: 中央;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .トップラッパー h1 {
-    フォントサイズ: 32px;
-  }
-
-  .heading h2 {
-    フォントサイズ: 20px;
-  }
-}
-
-@media all and (max-width: 670px) {
-  .header-right {
-    表示: なし;
-  }
-
-  .メニューアイコン {
-    表示ブロック;
-  }
-
-  .トップラッパー.btn {
-    幅: 100%;
-  }
-
-  。ツイッター {
-    マージントップ: 10px;
-  }
-
-  .トップラッパー {
-    テキスト整列: 左;
-  }
-
-  .トップラッパー h1 {
-    フォントサイズ: 24px;
-  }
-
-  .トップラッパー p {
-    フォントサイズ: 14px;
-  }
-
-  。レッスン {
-    幅: 100%;
-  }
-
-  .レッスンラッパー{
-    高さ: 1700px;
-  }
-
-  .メッセージラッパー.btn {
-    幅: 100%;
-  }
+.wpcf7 input[type="url"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"] {
+	direction: ltr;
 }

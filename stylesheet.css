@@ -10,7 +10,7 @@ div {
   height: 100%;
 }
 .parallax {
-  background-image: url(../images/top.jpg);
+  background-image: url(https://github.com/motipapa/-/blob/main/top.jpg?raw=true);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;

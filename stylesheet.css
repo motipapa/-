@@ -52,7 +52,7 @@ img {
 .moji{
   margin: 0 0 0 0;
   padding: 30px 10px 50px 20px;
-  background-image: url(https://github.com/motipapa/-/blob/main/menu-bg.png?raw=true);
+  background-image: url("https://github.com/motipapa/-/blob/main/menu-bg.png?raw=true");
   background-repeat: repeat-x;
 }
 

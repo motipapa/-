@@ -63,7 +63,7 @@ img{
 .nav ul{
     margin: 0 0 0 0;
     padding: 20px 10px 15px 20px;
-    background-image: url(../images/menu-bg.png);
+    background-image: url(https://github.com/motipapa/-/blob/main/menu-bg.png?raw=true);
     background-repeat: repeat-x;
 }
 .nav a:link{
@@ -85,7 +85,7 @@ img{
 
 /*すべてのページに適用　フッター*/
 .footer{
-    background-image: url(../images/footer-bg.png);
+    background-image: url(https://github.com/motipapa/-/blob/main/footer-bg.png?raw=true);
     background-repeat: no-repeat;
     margin-top: 30px;
     padding: 80px 15px 20px 15px;
